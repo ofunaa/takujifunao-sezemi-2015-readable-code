@@ -19,3 +19,25 @@ File::open("spec4-data.txt") {|f|
     recipe_id += 1
   end
 }
+
+## spec6
+
+recipe_id = 1
+File::open("spec4-data.txt") {|f|
+  while line = f.gets
+  	select_id = 0
+  	if select_id == 1
+  		puts "id:1 " + "オムライス"
+  		break
+  	elsif select_id == 2
+  		puts "id:2 " + "親子丼"
+  		break
+  	elsif select_id == 3
+  		puts "id:3 " + "杏仁豆腐"
+  		break
+  	else
+  		puts "id:" + "#{recipe_id} " + line
+  	end
+    recipe_id += 1
+  end
+}
