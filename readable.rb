@@ -25,7 +25,10 @@ File::open("spec4-data.txt") {|f|
 recipe_id = 1
 File::open("spec4-data.txt") {|f|
   while line = f.gets
+
+  	## 食べたいレシピを{1,2,3}から選択
   	select_id = 0
+  	
   	if select_id == 1
   		puts "id:1 " + "オムライス"
   		break
