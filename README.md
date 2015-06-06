@@ -6,7 +6,9 @@ Ruby
 
 元のディレクトリにcdで移動し、
 
+```ruby
 $ ruby readable.rb
+```
 
 をコマンド
 
