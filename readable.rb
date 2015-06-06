@@ -1,6 +1,6 @@
 ## spec1
 puts "オムライス"
 
-## spec2
-print File.open("recipe-data.txt").read
+## spec3
+print File.open("spec3-data.txt").read
 
