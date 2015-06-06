@@ -10,7 +10,7 @@ File::open("spec4-data.txt") {|f|
   f.each {|recipe| puts recipe}
 }
 
-## spec4
+## spec5
 
 recipe_id = 1
 File::open("spec4-data.txt") {|f|
