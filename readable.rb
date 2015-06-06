@@ -2,10 +2,20 @@
 puts "オムライス"
 
 ## spec3
-print File.open("spec3-data.txt").read
+puts File.open("spec3-data.txt").read
 
 ## spec4
 
 File::open("spec4-data.txt") {|f|
-  f.each {|recipe| print recipe}
+  f.each {|recipe| puts recipe}
+}
+
+## spec4
+
+recipe_id = 1
+File::open("spec4-data.txt") {|f|
+  while line = f.gets
+    puts "id:" + "#{recipe_id} " + line
+    recipe_id += 1
+  end
 }
